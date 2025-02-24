@@ -6,3 +6,14 @@ class Animal:
     def talk(self):
         print("hi")
 
+    def eat(self, food):
+        print(self.__name, "is eating", food)
+
+    def sleep(self):
+        print(self.__name, "is sleeping")
+
+    def move(self):
+        print(self.__name, "is moving around")
+
+    def play(self):
+        print(self.__name, "is playing")
