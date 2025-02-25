@@ -9,6 +9,32 @@ class Animal:
     def type(self):
         print(f"I am a {self.animal}")
 
+    def eat(self, food):
+        print(self.__name, "is eating", food)
+
+    def sleep(self):
+        print(self.__name, "is sleeping")
+
+    def move(self):
+        print(self.__name, "is moving around")
+
+    def play(self):
+        print(self.__name, "is playing")
+
+
+    def fight(self, fight):
+        self._fight = fight
+        print("I am fighting a ", self._fight)
+
+    def flee(self, escape):
+        self._escape = escape
+        print("I am escaping from a", self._escape)
+  
+    def favorite_meals(self, other):
+        print (f"My favorite meal to eat is {self.__FavoriteMeal}")
+        print (f"I also enjoy {other}")
+
+
     def NameLiking(self, liking):
         if liking.lower() == "yes":
             print(f"My name is {self.name}")
