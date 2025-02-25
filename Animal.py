@@ -1,32 +1,31 @@
 class Animal:
-    def __init__(self,AnimalType,Name,Gender,FavoriteMeal,PersonalityTrait): 
-        self.__AnimalType=AnimalType
-        self.__Name=Name
-        self.__Gender=Gender
-        self.__FavoriteMeal=FavoriteMeal
-        self.__PersonalityTrait=PersonalityTrait
-        
-        
-    def type(self):
-        print(f"I am a {self.__AnimalType}")
+    def __init__(self, name): 
+        self._name = name
+        print("Hello, I am", self._name)
 
-    def NameLiking(self, liking):
-        if liking == "Yes":
-             print(f"My name is {self.__Name}")
-        elif liking == "yes":
-            print(f"My name is {self.__Name}")
-        else: 
-            Name= input("What would you want your name to be:")
-        
+    def talk(self):
+        print("Hi, I am a animal")
 
-    def love(self,attraction):
-        print(f"I identify as a {self.__Gender} and I am attracted to {attraction}")
+    def eat(self, eat):
+        self._eat = eat
+        print("I am eating a", self._eat)
 
+    def species(self, species):
+        self._species = species
+        print("I am a", self._species)
+
+    def sleep(self, sleeping):
+        self._sleep = sleeping
+        print("I am sleeping in a", self._sleep)
+
+    def fight(self, fight):
+        self._fight = fight
+        print("I am fighting a ", self._fight)
+
+    def flee(self, escape):
+        self._escape = escape
+        print("I am escaping from a", self._escape)
+  
     def favorite_meals(self, other):
         print (f"My favorite meal to eat is {self.__FavoriteMeal}")
         print (f"I also enjoy {other}")
-
-    def PersonalityTrait(self):
-        print(f"I act {self.__PersonalityTrait}")
-        reasoning=input("Why act like this?")
-    
