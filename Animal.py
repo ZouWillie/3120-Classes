@@ -6,17 +6,19 @@ class Animal:
     def talk(self):
         print("Hi, I am a animal")
 
-    def eat(self, eat):
-        self._eat = eat
-        print("I am eating a", self._eat)
+main
+    def eat(self, food):
+        print(self.__name, "is eating", food)
 
-    def species(self, species):
-        self._species = species
-        print("I am a", self._species)
+    def sleep(self):
+        print(self.__name, "is sleeping")
 
-    def sleep(self, sleeping):
-        self._sleep = sleeping
-        print("I am sleeping in a", self._sleep)
+    def move(self):
+        print(self.__name, "is moving around")
+
+    def play(self):
+        print(self.__name, "is playing")
+
 
     def fight(self, fight):
         self._fight = fight
@@ -29,3 +31,4 @@ class Animal:
     def favorite_meals(self, other):
         print (f"My favorite meal to eat is {self.__FavoriteMeal}")
         print (f"I also enjoy {other}")
+
