@@ -27,4 +27,8 @@ main
     def flee(self, escape):
         self._escape = escape
         print("I am escaping from a", self._escape)
- main
+  
+    def favorite_meals(self, other):
+        print (f"My favorite meal to eat is {self.__FavoriteMeal}")
+        print (f"I also enjoy {other}")
+
